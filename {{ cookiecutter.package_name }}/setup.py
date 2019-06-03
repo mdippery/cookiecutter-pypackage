@@ -23,11 +23,6 @@ setup(
     author_email=author()[1],
     packages=find_packages(where="src"),
     package_dir={"": "src"},
-    entry_points={
-        "console_scripts": [
-            "{{ cookiecutter.package_name }}={{ cookiecutter.package_name }}.__main__:main",
-        ]
-    },
     setup_requires=["setuptools_scm"],
     classifiers=[
         "License :: OSI Approved :: MIT License",
