@@ -14,7 +14,7 @@ def author():
 
 setup(
     name="{{ cookiecutter.package_name }}",
-    version=VERSION,
+    use_scm_version=True,
     description="{{ cookiecutter.package_short_description }}",
     long_description=open("README.rst").read().strip(),
     license="MIT",
