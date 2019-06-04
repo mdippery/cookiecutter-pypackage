@@ -1,4 +1,6 @@
 {
   "package_name": "pypackage",
-  "package_short_description": "A Python library"
+  "package_short_description": "A Python library",
+  "github_username": "",
+  "author": ""
 }

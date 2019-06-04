@@ -14,11 +14,11 @@ def author():
 
 setup(
     name="{{ cookiecutter.package_name }}",
-    use_scm_version=True,
+    use_scm_version={"fallback_version": "0.1.0"},
     description="{{ cookiecutter.package_short_description }}",
     long_description=open("README.rst").read().strip(),
     license="MIT",
-    url="https://github.com/mdippery/{{ cookiecutter.package_name }}",
+    url="https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}",
     author=author()[0],
     author_email=author()[1],
     packages=find_packages(where="src"),
